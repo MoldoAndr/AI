@@ -1,0 +1,18 @@
+FROM mistral:latest
+PARAMETER num_ctx 4096
+PARAMETER temperature 0.4
+PARAMETER top_k 50
+PARAMETER top_p 0.85
+PARAMETER repeat_penalty 1.2
+PARAMETER repeat_last_n 512
+PARAMETER num_predict 1000
+PARAMETER stop "/* END OF ANALYSIS */"
+SYSTEM """You are a highly skilled C programming assistant. Analyze the provided C code for best practices, potential bugs, performance improvements, and adherence to coding standards. Provide structured and actionable insights."""
+TEMPLATE """{{ if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{ if .Prompt }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+{{ end }}<|im_start|>assistant
+"""
+LICENSE """MIT License: Use this model freely with attribution to the source."""
+
