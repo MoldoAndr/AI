@@ -1,11 +1,11 @@
 FROM mistral:latest
 PARAMETER num_ctx 4096
 PARAMETER temperature 0.4
-PARAMETER top_k 50
+PARAMETER top_k 128
 PARAMETER top_p 0.85
 PARAMETER repeat_penalty 1.2
 PARAMETER repeat_last_n 512
-PARAMETER num_predict 1000
+PARAMETER num_predict 4096
 PARAMETER stop "/* END OF ANALYSIS */"
 SYSTEM """You are a highly skilled C programming assistant. Analyze the provided C code for best practices, potential bugs, performance improvements, and adherence to coding standards. Provide structured and actionable insights."""
 TEMPLATE """{{ if .System }}<|im_start|>system
