@@ -21,7 +21,7 @@ else
     exit 1
 fi
 
-echo -e "🛠️  Creating the G0D model optimized for C programming...\n"
+echo -e "🛠️  Creating the model optimized for C programming...\n"
 if ollama create G0D --file Modelfile; then
     echo -e "\n✅ Model 'G0D' created successfully.\n"
 else
@@ -29,6 +29,6 @@ else
     exit 1
 fi
 
-echo -e "🎉 The Mistral-based code analysis LLM, enhanced for C programming, is ready to use!\n"
+echo -e "🎉 The code analysis LLM, enhanced for C programming, is ready to use!\n"
 echo -e "To run the model, use the following command:\n"
 echo -e "    ollama run G0D\n"
