@@ -14,10 +14,3 @@ FLame Coder is a Flask-based web application that serves as an AI-powered chatbo
 ### Prerequisites
 - Python 3.8 or higher
 - A running instance of an AI model server compatible with the application, such as [Ollama](https://ollama.ai/).
-
-### Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/deepseek-coder.git
-   cd deepseek-coder
