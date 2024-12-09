@@ -1,6 +1,6 @@
 # Flame
 
-FLame Coder is a Flask-based web application that serves as an AI-powered chatbot for interactive code generation and conversations. It supports real-time response streaming and offers a modern, responsive user interface.
+Flame Coder is a Flask-based web application that serves as an AI-powered chatbot for interactive code generation and conversations. It supports real-time response streaming and offers a modern, responsive user interface.
 
 ## Features
 
