@@ -1,39 +1,23 @@
-# Mistral: Enhanced C Programming LLM with Ollama Integration
+# Flame
 
-## Overview
-Welcome to **Mistral** — a powerful code analysis Large Language Model (LLM) designed specifically for **C programming**. Mistral is built on the Ollama platform, leveraging state-of-the-art AI to help you analyze and optimize your C code more efficiently.
-
-This repository provides an easy way to set up and run the **G0D model**, a model focused on C programming, with enhanced capabilities for code analysis.
+FLame Coder is a Flask-based web application that serves as an AI-powered chatbot for interactive code generation and conversations. It supports real-time response streaming and offers a modern, responsive user interface.
 
 ## Features
-- **Enhanced C Programming Support**: Tailored to analyze, refactor, and optimize C code.
-- **CPU Limiting**: Automatically limits CPU usage to 20%, ensuring that the model runs efficiently without overburdening your system.
-- **Seamless Setup**: The script automates the entire setup process, from installation to model creation.
 
----
+- **Interactive Chat Interface**: A clean and responsive UI for seamless communication.
+- **Real-time Streaming**: Displays bot responses incrementally as they are generated.
+- **Conversation Memory**: Maintains context to improve response quality over multiple prompts.
+- **Customizable AI Parameters**: Modify model parameters like `temperature`, `top_k`, and `top_p` for tailored interactions.
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
-Ensure you have the following installed on your machine:
-- A Unix-like operating system (Linux/macOS)
-- `curl` (for downloading the setup script)
-- `cpulimit` (for limiting CPU usage)
+- Python 3.8 or higher
+- A running instance of an AI model server compatible with the application, such as [Ollama](https://ollama.ai/).
 
-### Steps to Install
-1. Clone this repository or download the `install.sh` script.
-2. Run the following command to install Ollama and set up the environment:
+### Setup
 
-```bash
-# Download and run the installation script
-echo -e "Downloading Ollama for Mistral configuration...\n"
-curl -fsSL https://ollama.com/install.sh | sh
-
-# Set CPU limit to 20% to prevent high resource consumption
-echo -e "Setting CPU limit to 20%, preventing CPU bounding...\n"
-cpulimit -e ollama -l 20 --quiet &>/dev/null &
-disown
-
-# Create the G0D model focused on C programming
-echo -e "Creating the G0D model focused on C programming...\n"
-ollama create G0D --file Modelfile
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/deepseek-coder.git
+   cd deepseek-coder
